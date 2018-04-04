@@ -4,3 +4,4 @@ def fn(a,b):
     print(a,b)
 
 fn(**doc)
+print(666)
