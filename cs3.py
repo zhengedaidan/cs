@@ -9,3 +9,4 @@ env = Environment(loader=PackageLoader('tem',"temp",'utf-8'))
 template = env.get_template('my2.html')
 print(template.render(the='variables', go='here'))
 
+1
