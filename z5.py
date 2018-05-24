@@ -83,3 +83,8 @@ oa_cost(y=2018,m=5)
     # print("今天报销的费用～～",other_moneys)
 
 
+# def cs(self, phone):
+#     self.token_headers, _ = self.auth_login(phone)
+#     req = requests.post('http://127.0.0.1:8081/1.0/account/or_approve_leave', headers=self.token_headers)
+#     print
+#     req.content.decode()
