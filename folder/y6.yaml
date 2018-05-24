@@ -1,28 +1,26 @@
-ChuaTony:   # No.1
-  公司: 文传
-# 2017-05-18
-  联络:
-  # Contact
-  - 公司: '1422031030'
-  - 手机: '18650144578'
-  - 住家: '2233068479'
-  住址:
-  # Address
-  - 公司: 褔建。
-  - 住家: 台中。
-  交通: 无
-  附件:
-Tom:        # No.2
-  公司: 天褔
-# 2017-05-18
-  联络:
-  # Contact
-  - 公司: '963852741'
-  - 手机: '18650123456'
-  - 住家: '2233061234'
-  住址:
-  # Address
-  - 公司: 褔建。
-  - 住家: 台北。
-  交通: 自行车
-  附件:
+
+
+    /is_departure_approver:
+      post:
+        summary: 判断当前账号有无未完成的离职审批
+        description: 所有账号接口
+        api_method: is_departure_approver
+        security:
+          - apikey: []
+        tags:
+          - Accounts
+        responses:
+          "200":
+            description: success
+            schema:
+              $ref: "#/definitions/Is_departure_approver"
+          default:
+            description: Unexpected error
+            schema:
+              $ref: "#/definitions/Error"
+
+  Is_departure_approver:
+    properties:
+      ok:
+        type: bool
+        description: (true有未完成的离职申请,false没有)

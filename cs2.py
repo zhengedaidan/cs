@@ -13,14 +13,14 @@ def load_yaml_file(path, round_tripping=False):
         if round_tripping:  #判断是否有注释
             data = round_trip_load(reader)
             # with open(newfloder+"/"+os.path.basename(path),"w",encoding="utf-8") as w:    拼接路径 加号方式需要有"/" join是逗号
-            with open(os.path.join(newfloder,os.path.basename(path)),"w",encoding="utf-8") as w:
-                round_trip_dump(data, w, allow_unicode=True)
+            with open(os.path.join(newfloder,os.path.basename(path)),"w",encoding="utf-8") as wr:
+                round_trip_dump(data, wr, allow_unicode=True)
 
         else:
             data = safe_load(reader)
-            with open(os.path.basename(path),"w",encoding="utf-8") as w:
+            with open(os.path.basename(path),"w",encoding="utf-8") as wr:
                 # dump(data, w, allow_unicode=True)
-                dump_all([data], w, allow_unicode=True)
+                dump_all([data], wr, allow_unicode=True)
     return data
 
 if __name__ == '__main__':

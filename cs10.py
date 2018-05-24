@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from tkinter import *
 import time
 
@@ -30,12 +31,12 @@ def main():
   #创建控件
   txtMsgList = Text(frmLT)
   txtMsgList.tag_config('greencolor', foreground='#008C00')#创建tag
-  txtMsg = Text(frmLC)
+  txtMsg = Text(frmLC);
   #发送消息事件
   txtMsg.bind("<KeyPress-Up>", sendMsgEvent)
   btnSend = Button(frmLB, text='发送', width = 8, command=sendMsg)
   btnCancel = Button(frmLB, text='取消', width = 8, command=cancelMsg)
-  imgInfo = PhotoImage(file = "01.gif")
+  imgInfo = PhotoImage(file = "python.gif")
   lblImage = Label(frmRT, image = imgInfo)
   lblImage.image = imgInfo
 

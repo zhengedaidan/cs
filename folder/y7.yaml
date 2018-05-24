@@ -1,0 +1,15 @@
+
+- name: Account
+  description: 账户
+  schema:
+  - name: _id
+    type: ObjectId
+    note: 账号ID
+    required: true
+  - name: name
+    type: string
+    note: 姓名
+    required: true
+  - name: phone
+    type: string
+    note: 手机号
