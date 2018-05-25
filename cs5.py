@@ -11,3 +11,4 @@ print('Python %s on %s' % (sys.version, sys.platform))
 1
 "cs5"
 "cdw"
+"cs5a"
