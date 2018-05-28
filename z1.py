@@ -15,7 +15,7 @@ li=["1","2","3","4"]
 s="0"
 for i in li:
    s+=i
-   print(s)
+   print(s,6666)
 
 
 # print(s)
