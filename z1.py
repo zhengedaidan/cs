@@ -31,4 +31,3 @@ for i in li:
 
 # print(s)
 
-"666"
