@@ -9,3 +9,4 @@ env = Environment(loader=FileSystemLoader('template', 'utf-8'))
 # template = env.get_template('py.j2')
 template = env.get_template('my.html')
 print(template.render(b="模版变量"))
+
