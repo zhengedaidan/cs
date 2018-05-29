@@ -16,7 +16,3 @@ s="0"
 for i in li:
    s+=i
    print(s,6666)
-
-
-print(s)
-
