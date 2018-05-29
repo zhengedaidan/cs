@@ -10,3 +10,6 @@ env = Environment(loader=FileSystemLoader('template', 'utf-8'))
 template = env.get_template('my.html')
 print(template.render(b="模版变量"))
 
+# di={"m":1}
+# di.setdefault("n",{})["n"]=time.time()
+# di.setdefault("p",{"p":time.time()})
