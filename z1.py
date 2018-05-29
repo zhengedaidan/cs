@@ -18,5 +18,5 @@ for i in li:
    print(s,6666)
 
 
-# print(s)
+print(s)
 
