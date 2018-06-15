@@ -1,2 +1,2 @@
 # -*- coding:utf-8 -*-
-"cs99"
+print("i1.py")

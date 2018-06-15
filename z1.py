@@ -1,23 +1,41 @@
+#coding=utf-8
+# import re
+# p = re.findall(r"q(.*?)q(.*?)w","q11q22w",re.S)
+# print(p)
+#
+# q=re.search(r"\d+","asd335")
+# print(q).group()
+#
 
-# def f1():
-#     while True:
-#         print(66)
-#         print(77)
-#         t2.start()
-# def f2():
-#     for i in range(100):
-#         print(9)
-# t1=multiprocessing.Process(target=f1)
-# t2=multiprocessing.Process(target=f2)
-# t1.start()
-li=["1","2","3","4"]
-
-s="0"
-for i in li:
-   s+=i
-   print(s,6666)
+# import random
+#
+# print("%.3d" % random.randint(1,99))
+#
+# print("%.3s" % "sadkljf")
+#
+# print("%.2f" % 8.93208)
 
 
-# print(s)
+# def f(p):
+#     return p%2==0
+# ret=filter(f,[1,2,3,4,5,])
+# print(ret)
+#
+# ret1=map(f,[1,2,3,4,5])
+# print(ret1)
+
+import hashlib,hmac
+# print(hashlib.sha256("1232".encode()).hexdigest())
+# fd=hashlib.sha256()
+# fd.update("1232".encode())
+# print(fd.hexdigest())
 
 
+
+# print(hmac.new("key".encode('utf-8'), "s".encode('utf-8'), hashlib.sha256).hexdigest())
+# print(hmac.new("key".encode('utf-8'), "s".encode('utf-8'), hashlib.md5).hexdigest())
+# print(hmac.new("key".encode('utf-8'), "s".encode('utf-8')).hexdigest())
+
+
+import init
+# from init.i1 import *

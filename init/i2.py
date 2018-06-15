@@ -1,2 +1,3 @@
 # -*- coding:utf-8 -*-
-"cs100"
+print("i2.py")
+
