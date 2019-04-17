@@ -37,5 +37,5 @@ import hashlib,hmac
 # print(hmac.new("key".encode('utf-8'), "s".encode('utf-8')).hexdigest())
 
 
-import init
+import initxi
 # from init.i1 import *

@@ -3,7 +3,7 @@ def fb_yeied(n):
     while n>0:
         ret=yield b
         print(ret)
-        a,b=b,a+b
+        a,b = b,a+b
         n -= 1
 
 # li=list(fb_yeied(100))
